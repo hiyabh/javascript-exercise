@@ -152,7 +152,16 @@ console.log('Final bitcoin balance is: ', btcAmount)
     <script src="src/prism.min.js"></script>
     <script>
       const onSolution = () => {
-        /* todo remove this line and start your answer */
+        let btcAmount = +prompt('How many bitcoins you saved?');
+        let withdraw = 0;
+        if (btcAmount > 0) {
+          withdraw = +prompt('How many bitcoins you would like to withdraw now?');
+          if (withdraw > btcAmount) {
+            console.log('insufficient balance');
+          } else {
+          console.log('Final balance: ', btcAmount - withdraw);
+          }
+        }
       };
     </script>
     <script>
