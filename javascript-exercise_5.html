@@ -152,7 +152,16 @@ if (firstNum === secNum) {
     <script src="src/prism.min.js"></script>
     <script>
       const onSolution = () => {
-        /* todo remove this line and start your answer */
+        let numA = +prompt('Enter number 1');
+        let numB = +prompt('Enter number 2');
+        if (numA > numB) {
+          console.log('1st number is bigger')
+        } else if (numA < numB) {
+          console.log('2nd number is bigger')
+        }
+        else {
+          console.log('Numbers are equal')
+        }
       };
     </script>
     <script>
