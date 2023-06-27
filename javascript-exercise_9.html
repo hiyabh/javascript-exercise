@@ -157,7 +157,41 @@ if (triangleFace1 === triangleFace2 && triangleFace1 === triangleFace3) {
     <script src="src/prism.min.js"></script>
     <script>
       const onSolution = () => {
-        /* todo remove this line and start your answer */
+        let triangleFace1 = +prompt("Enter triangle1");
+        let triangleFace2 = +prompt("Enter triangle2");
+        let triangleFace3 = +prompt("Enter triangle3");
+        if (
+          triangleFace1 === triangleFace2 &&
+          triangleFace3 === triangleFace1
+        ) {
+          console.log(
+            "1:" +
+              triangleFace1 +
+              " 2:" +
+              triangleFace2 +
+              " 3:" +
+              triangleFace3 +
+              " - " +
+              "Equilateral triangle"
+          );
+        } else if (
+          triangleFace1 === triangleFace2 ||
+          triangleFace1 === triangleFace3 ||
+          triangleFace2 === triangleFace3
+        ) {
+          console.log(
+            "1:" +
+              triangleFace1 +
+              " 2:" +
+              triangleFace2 +
+              " 3:" +
+              triangleFace3 +
+              " - " +
+              "Isosceles triangle"
+          );
+        } else {
+          console.log("Scalene triangle");
+        }
       };
     </script>
     <script>
