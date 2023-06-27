@@ -194,7 +194,33 @@ if (daysUntilFriday === 0) {
     <script src="src/prism.min.js"></script>
     <script>
       const onSolution = () => {
-        /* todo remove this line and start your answer */
+        let dayToday = +prompt("what day is it today (as number from 1-7)?");
+        let dayUntilShabat = 7 - dayToday;
+        switch (dayToday) {
+          case 1:
+            console.log(dayUntilShabat + ' Days Until Shabat');
+            break;
+          case 2:
+            console.log(dayUntilShabat + ' Days Until Shabat');
+            break;
+          case 3:
+            console.log(dayUntilShabat + ' Days Until Shabat');
+            break;
+          case 4:
+            console.log(dayUntilShabat + ' Days Until Shabat');
+            break;
+          case 5:
+            console.log(dayUntilShabat + ' Days Until Shabat');
+            break;
+          case 6:
+            console.log("Shabat is tomorrow!");
+            break;
+          case 7:
+            console.log("Shabat Shalom!");
+            break;
+          default:
+            console.log("is it maayan calendar day or what?");
+        }
       };
     </script>
     <script>
