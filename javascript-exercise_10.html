@@ -167,7 +167,20 @@ switch (color) {
     <script src="src/prism.min.js"></script>
     <script>
       const onSolution = () => {
-        /* todo remove this line and start your answer */
+        let red = ['red', 'salmon', 'tomato', 'crimson'];
+        let green = ['green', 'lime', 'teal'];
+        let yellow = ['gold', 'yellow', 'khaki'];
+        let itemToFind = prompt('Please enter your favorite color');
+
+        if (red.includes(itemToFind)) {
+          console.log(itemToFind + " is part of the red tree.");
+        } else if (green.includes(itemToFind)) {
+          console.log(itemToFind + " is part of the green tree.");
+        } else if (yellow.includes(itemToFind)) {
+          console.log(itemToFind + " is part of the yellow tree.");
+        } else {
+          console.log(itemToFind + " is that a new color?");
+        }
       };
     </script>
     <script>
